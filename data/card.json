@@ -1,0 +1,11 @@
+[
+	{
+		"id":"1",
+		"title":"Classic portfolio", 
+		"info":"This is your regular developer portfolio with a little bit of functions here and there", 
+		"skill_1":"Next JS", 
+		"skill_2":"Typescript", 
+		"skill_3":"React JS",
+		"skill_4":"ES6" 
+	}
+]
