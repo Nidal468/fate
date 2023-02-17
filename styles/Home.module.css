@@ -136,7 +136,7 @@
 	height: 400px;
 	display: flex;
 	align-items: flex-start;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	padding: 10px;
 	
@@ -148,6 +148,7 @@
 	align-items: center;
 	justify-content: center;
 	color: #fff;
+	margin: 10px;
 	
 }
 #icon{
