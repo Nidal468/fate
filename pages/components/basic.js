@@ -15,10 +15,10 @@ export function Nav(){
 				viewport={{once:true}}
 				>
 				<span>
-				<i className="fi fi-brands-youtube"></i>
-				<i className="fi fi-brands-discord"></i>
-				<i className="fi fi-brands-linkedin"></i>
-				<i className="fi fi-brands-facebook"></i>
+				<a href=""><i className="fi fi-brands-youtube"></i></a>
+				<a><i className="fi fi-brands-discord"></i></a>
+				<a href="https://www.linkedin.com/in/nidal-abu-saleh-495943253"><i className="fi fi-brands-linkedin"></i></a>
+				<a href="https://www.facebook.com/profile.php?id=100084591155597&mibextid=ZbWKwL"><i className="fi fi-brands-facebook"></i></a>
 			</span>
 			</motion.div>
 			<motion.div initial={{ 

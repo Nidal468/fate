@@ -19,7 +19,7 @@
 	border-radius: 3px;
 	
 }
-.body span i{
+.body span a{
 	width: 30px;
 	height: 30px;
 	display: flex;
@@ -29,7 +29,12 @@
 	background: #191919;
 	
 }
-.body span i:hover{
+.body span a i{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.body span a:hover{
 	background: #e3edf7;
 	color: #333;
 	border: 1px solid #333;

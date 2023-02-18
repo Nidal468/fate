@@ -70,6 +70,8 @@
 	height: 60px;
 	border-radius: 50%;
 	border: 1px solid #333;
+	object-fit: cover;
+	object-position: 50%;
 	
 }
 .link{
@@ -91,10 +93,15 @@
 	font-size: 14px;
 	
 }
-.about img{
+.image{
 	width: 250px;
 	height: 400px;
-	background: #555;
+	
+}
+.image img{
+	width: 250px;
+	height: 400px;
+	object-fit: cover;
 	
 }
 .about span{
@@ -288,7 +295,12 @@
 		height: 400px;
 		
 	}
-	.about img{
+	.image{
+		width: 175px;
+		height: 400px;
+		
+	}
+	.image img{
 		width: 175px;
 		height: 400px;
 		

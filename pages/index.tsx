@@ -2,9 +2,14 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import {home} from '../styles/style'
 import {Nav, Card, Loading, Skill} from './components/basic';
+import {meryl, alyss, claudia, zhongli, zilong, seele, fanny, gusion} from '../public/images/image';
 import {useState, useEffect} from 'react';
 import {motion} from 'framer-motion';
 import {Cursor, useTypewriter } from 'react-simple-typewriter'
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {EffectFade, A11y, Autoplay} from 'swiper';
+import 'swiper/css';
+import "swiper/css/effect-fade";
 
 
 const Home: NextPage = () => {
@@ -45,7 +50,7 @@ const Home: NextPage = () => {
 				<div className={home.hero}>
 					<div className={home.ring}></div>
 					<span id={home.hero}>
-						<img/>
+						<img src={zhongli} />
 						<p>Frontend Developer</p>
 						<h3>
 							<span>{text}</span>
@@ -72,7 +77,26 @@ const Home: NextPage = () => {
 					viewport={{once:true}}
 					>	
 				<div className={home.about}>
-					<img/>
+						<Swiper
+							slidesPerView={1}
+							effect={"fade"}
+							modules={[EffectFade, Autoplay]}
+							loop={true}
+							className={home.image}
+							autoplay={{
+								delay:2500,           disableOnInteraction: false,
+ }}
+							centeredSlides={true}
+							>
+							<SwiperSlide><img src={meryl} style={{objectPosition: "40%"}} /></SwiperSlide>
+							<SwiperSlide><img src={zilong} style={{objectPosition: "30%"}}/></SwiperSlide>
+							<SwiperSlide><img src={alyss} style={{objectPosition: "70%"}} /></SwiperSlide>
+							<SwiperSlide><img src={seele} /></SwiperSlide>
+							<SwiperSlide><img src={zhongli} /></SwiperSlide>
+							<SwiperSlide><img src={claudia} style={{objectPosition: "60%"}} /></SwiperSlide>
+							<SwiperSlide><img src={fanny} style={{objectPosition: "60%"}}/></SwiperSlide>
+							<SwiperSlide><img src={gusion} /></SwiperSlide>
+						</Swiper>
 					<span>
 						<h2>Here is a little about me</h2>
 						<p>Hey, I am Abu Saleh also known as Fate. I am a junior frontend developer from Bangladesh. I mainly like building websites, web designs, any kinds of graphic designs. I am available on Youtube, Facebook, Discord and of course LinkedIn. I started my coding journey at 2020 after learning everything related to graphic design. At first I learned html, css and java script then slowly react and later next js. Currently I am working as a Freelancer on Fiverr. </p>
