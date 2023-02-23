@@ -1,7 +1,10 @@
-import {nav, card, load, home} from '/styles/style';
-import {motion} from 'framer-motion';
+import React from 'react';
+import {useState, useEffect} from 'react';
+import {nav, card, load, home, menu} from '/styles/style';
 
-import skills from '/data/skill.json';
+import {motion} from 'framer-motion';
+import Link from 'next/link';
+import skills from '/data/skill';
 export function Nav(){
 	return(
 		<nav className={nav.body}>
@@ -46,6 +49,7 @@ export function Card(){
 				<h2>Classic junior dev portfolio</h2>
 				</span>
 				<p>This is a classic junior developer portfolio that I made with next js in my free time.</p>
+				<Link href="./movie">Live build</Link>
 				<span>
 					<small>made by</small>
 					<small>Next JS</small>
@@ -86,5 +90,44 @@ export function Skill(){
 					})}
 				</div>
 					</motion.div>
+	)
+}
+export function Menu(props){
+	const [isOne, setIsOne] = useState(true);
+	const [isTwo, setIsTwo] = useState(false);
+	const [isThree, setIsThree] = useState(false);
+	const [isFour, setIsFour] = useState(false);
+	const icon = "fi fi-rr-";
+	function One(){
+		setIsOne(true);
+		setIsTwo(false);
+		setIsThree(false);
+		setIsFour(false);
+	}
+	function Two(){
+		setIsOne(false);
+		setIsTwo(true);
+		setIsThree(false);
+		setIsFour(false);
+	}
+	function Three(){
+		setIsOne(false);
+		setIsTwo(false);
+		setIsThree(true);
+		setIsFour(false);
+	}
+	function Four(){
+		setIsOne(false);
+		setIsTwo(false);
+		setIsThree(false);
+		setIsFour(true);
+	}
+	return(
+		<div className={menu.menu}>
+				<span onClick={One} className={isOne? menu.inactive:menu.active}><i id={menu.icon} className={icon+props.one}></i></span>
+				<span onClick={Two} className={isTwo? menu.inactive:menu.active}><i id={menu.icon} className={icon+props.two}></i></span>
+				<span onClick={Three} className={isThree? menu.inactive:menu.active}><i id={menu.icon} className={icon+props.three}></i></span>
+				<span onClick={Four} className={isFour? menu.inactive:menu.active}><i id={menu.icon} className={icon+props.four}></i></span>
+      </div>
 	)
 }

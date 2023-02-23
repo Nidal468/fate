@@ -31,7 +31,7 @@
 }
 .point h3{
 	color: #fff;
-	
+	font-family: 'Roboto Condensed', sans-serif;
 }
 .ring{
 	width: 400px;
@@ -64,6 +64,7 @@
 	z-index: 200;
 	margin: 50px 0px;
 	
+	
 }
 #hero img{
 	width: 60px;
@@ -83,6 +84,10 @@
 	padding: 0px 10px;
 	
 }
+.link a p{
+	font-family: 'Raleway', sans-serif;
+	
+}
 .about{
 	width: 100%;
 	height: 400px;
@@ -91,7 +96,7 @@
 	justify-content: center;
 	margin: 80px 0px;
 	font-size: 14px;
-	
+	font-family: 'Montserrat', sans-serif;
 }
 .image{
 	width: 250px;
@@ -287,7 +292,7 @@
 	}
  .about{
 	 height: 400px;
-	 font-size: 8px;
+	 font-size: 10px;
 	 
  }
 	.about span{
