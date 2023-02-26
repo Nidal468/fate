@@ -36,13 +36,15 @@ const Profile: NextPage = () =>{
 						<a className={profile.contact}>Email me</a>
 					</nav>
 					<div className={profile.info}>
-						<div className={profile.about}>
 							<h1><span>{text}</span><Cursor cursorColor="blue"/></h1>
-							<p>Frontend developer from Bangladesh. Skilled in React, Next, Typescript etc</p>
+							<p>Frontend developer from Bangladesh. Skilled in React, Next, Typescript etc. I have decent knowledge in UI and UX so I, can help out with designs too. Feel me to contact me anytime.</p>
 							<a>Read more</a>
-						</div>
-						<div className={profile.image}>
-						</div>
+					</div>
+				</div>
+				<div className={profile.skill}>
+					<div className={profile.skillList}>	
+					</div>
+					<div className={profile.contactList}>
 					</div>
 				</div>
 			</main>
