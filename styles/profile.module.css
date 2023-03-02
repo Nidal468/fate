@@ -1,42 +1,57 @@
 .container{
-	width: 100%;
-	min-height: 100vh;
+	
 	
 }
 .body{
-	background: #e3edf7;
+	background: #191919;
 	width: 100%;
+	height: 460px;
+	background: linear-gradient(rgba(10,10,10,0.4), rgba(40,40,40,0.4)), url('/images/bg.jpg');
+	background-position: 0% 20%;
+	box-shadow:  9px 9px 18px #141414,
+             -9px -9px 18px #1e1e1e;
+	animation: image 16s ease-in infinite alternate;
 	
 }
 .hero{
 	width: 100%;
-	height: 460px;
-	background: linear-gradient(rgba(10,10,10,0.7), rgba(40,40,40,0.7)), url('/images/meryl.jpg');
+	height: 100%;
 	color: #fff;
 	font-size: 12px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 	background-size: cover;
-	background-position: 0 20%;
-	box-shadow:  13px 13px 26px #dbdbdb,
-             -13px -13px 26px #ffffff;
+	transition: 1s;
+	
 }
-.hero nav{
+.nav{
 	width: 100%;
 	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px 20px;
-	
+	/* From https://css.glass */
+background: rgba(255, 255, 255, 0.11);
+box-shadow:  11px 11px 22px #131313,
+             -11px -11px 22px #1f1f1f;
+backdrop-filter: blur(3.8px);
+-webkit-backdrop-filter: blur(3.8px);
+border-bottom: 1px solid rgba(255, 255, 255, 0.57);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	font-size: 12px;
 }
-.hero nav img{
+.nav img{
 	width: 20%;
 	height: 100%;
 	
 }
-.hero nav ul{
+.nav ul{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -44,23 +59,26 @@
 	list-style: none;
 	
 }
-.hero nav ul li{
+.nav ul li{
 	transition: 0.5s;
+	padding: 10px;
+	font-weight: 600;
 	
 }
-.hero nav ul li:hover{
-	width: 50px;
-	border-bottom: 1px solid #fff;
+.nav ul li:hover{
+	color: #00FFFF;
+	font-size: 16px;
+	
 	
 }
-.hero nav span{
-	width: 19%;
-	height: 100%;
+.nav span{
+	width: 142px;
+	height: 32px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding: 0px 10px;
-	
+	justify-content: center;
+	border-radius: 14px;
+	background: linear-gradient(90deg, #0000FF, #00FFFF);
 }
 .contact{
 	width: 140px;
@@ -73,18 +91,37 @@
 	color: #333;
 	
 }
+.skillContainer{
+	width: 100%;
+	min-height: 300px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 0px 20px;
+	
+}
 .info{
 	width: 50%;
-	min-height: 300px;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 0px 20px;
 	flex-direction: column;
 	text-align: center;
+	font-size: 10px;
+	font-weight: 500;
 	
 }
-.info a{
+.button{
+	width: 300px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.button a{
 	width: 140px;
 	height: 30px;
 	display: flex;
@@ -94,38 +131,201 @@
 	background: linear-gradient(145deg, #fff, #e3edf7);
 	color: #333;
 }
-.skill{
-	width: 100%;
-	height: 300px;
-	margin: 50px 0px;
-	padding: 20px 50px;
+.skills{
+	width: 100px;
+	height: 140px;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	font-size: 18px;
+	
+}
+.skills span{
+	width: 100px;
+	height: 25px;
+	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	
-} 
-.skillList{
-	width: 30%;
-	height: 100%;
-	/* From https://css.glass */
-	background: rgba(55, 59, 91, 0.42);
-	border-radius: 16px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5.8px);
-	-webkit-backdrop-filter: blur(5.8px);
-	border: 1px solid rgba(55, 59, 91, 0.3);
 }
-.contactList{
-	width: 60%;
-	height: 100%;
-	/* From https://css.glass */
-	background: rgba(55, 59, 91, 0.42);
-	border-radius: 16px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5.8px);
-	-webkit-backdrop-filter: blur(5.8px);
-	border: 1px solid rgba(55, 59, 91, 0.3);
+.skills span h6{
+	width: 70px;
+	height: 20px;
+	background: #e3edf7;
+	border-radius: 12px;
+	font-size: 10px;
+	font-weight: 500;
+	color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: 0.5s;
+	
 }
-
-
-
+.skills span i{
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	transition: 0.5s;
+	
+}
+.skills span i:hover{
+	font-size: 28px;
+	
+}
+#one:hover #first{
+	opacity: 1;
+}
+#two:hover #second{
+	opacity: 1;
+}
+#three:hover #third{
+	opacity: 1;
+}
+#four:hover #fourth{
+	opacity: 1;
+}
+#five:hover #fith{
+	opacity: 1;
+}
+#six:hover #sixth{
+	opacity: 1;
+}
+#seven:hover #seventh{
+	opacity: 1;
+}
+#eight:hover #eighth{
+	opacity: 1;
+}
+.project{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	transition: 1s;
+	
+}
+.swiper{
+	width: 100%;
+	height: 300px;
+	
+}
+.swiper img{
+	width: 90%;
+	object-fit: cover;
+	border: 2px solid #fff;
+	border-radius: 12px;
+	
+}
+.prev{
+	background: #e3edf7;
+	width: 40px;
+	height: 60px;
+	position: absolute;
+	top: 40%;
+	left: 1%;
+	z-index: 999;
+	pointer-events: none;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.next{
+	background: #e3edf7;
+	width: 40px;
+	height: 60px;
+	position: absolute;
+	top: 40%;
+	right: 1%;
+	z-index: 999;
+	pointer-events: none;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.next i{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	
+}
+.prev i{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+}
+@media only screen and (max-width: 576px){
+	.nav ul{
+		display: none;
+		
+	}
+	.nav span{
+		display: none;
+		
+	}
+	.hero{
+		height: 400px;
+		background-position: 50% 50%;
+		
+	}
+	.nav{
+		height: 40px;
+		
+	}
+	.info{
+		width: 80%;
+		font-size: 12px;
+		
+	}
+	.info h1{
+		font-size: 14px;
+		
+	}
+	.skills{
+		display: none;
+		
+	}
+	.skillContainer{
+		align-items: center;
+		justify-content: center;
+		
+	}
+}
+@keyframes image{
+	0%{
+		background-position: 0% 0%;
+		
+	}
+	20%{
+		background-position: 0% 30%;
+	}
+	50%{
+		background-position: 50% 50%;
+		
+	}
+	70%{
+		background-position: 50% 0%;
+		
+	}
+	90%{
+		background-position: 80% 50%;
+		
+	}
+	100%{
+		background-position: 80% 100%;
+		
+	}
+}
