@@ -1,5 +1,4 @@
-import card from './card';
-import skill from './skill';
+import home from './home';
 
-export {card, skill};
+export {home};
 
