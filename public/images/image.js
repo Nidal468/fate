@@ -7,8 +7,9 @@ const seele = '/images/seele.jpg';
 const fanny = '/images/fanny.jpg';
 const gusion = '/images/gusion.jpg';
 const bg = '/images/bg.jpg';
-
-export {meryl, alyss, claudia, zhongli, zilong, seele, fanny, gusion, bg};
+const planet = '/images/cplanet.png'
+const tree = '/images/ctree.png'
+export {meryl, alyss, claudia, zhongli, zilong, seele, fanny, gusion, bg, planet, tree};
 
 
 

@@ -1,4 +1,5 @@
-import home from './home';
+import index from './home';
+import items from './items';
 
-export {home};
+export {index, items};
 
