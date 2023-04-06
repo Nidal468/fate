@@ -1,5 +1,6 @@
 import index from './home';
 import items from './items';
+import themes from './theme';
 
-export {index, items};
+export {index, items,themes};
 
