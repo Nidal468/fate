@@ -7,7 +7,8 @@
 		"state4":"block", 
 		"color1":"#0096FF", 
 		"color":"#1c1c1f", 
-		"background":"#e3edf7"
+		"background":"#e3edf7", 
+    "shadow":"6px 6px 12px #d3dce6, -6px -6px 12px #f3feff" 
 	},
 	{
 		"id":"1",
@@ -17,7 +18,8 @@
 		"state4":"none", 
 		"color1":"#0096FF", 
 		"color":"#1c1c1f", 
-		"background":"#e3edf7"
+		"background":"#e3edf7", 
+		"shadow":"6px 6px 12px #d3dce6, -6px -6px 12px #f3feff"  
 	},
 	{
 		"id":"2",
@@ -25,9 +27,10 @@
 		"state2":"block",
 		"state3":"none", 
 		"state4":"none", 
-		"color1":"#C70039", 
+		"color1":"#ffffff", 
 		"color":"#ffffff", 
-		"background":"#191919"
+		"background":"#820000", 
+		"shadow":"13px 13px 26px #680000, -13px -13px 26px #9c0000"
 	}, 
 	{
 		"id":"3",
@@ -35,9 +38,10 @@
 		"state2":"none",
 		"state3":"block", 
 		"state4":"none", 
-		"color1":"#0096FF", 
+		"color1":"#A020F0", 
 		"color":"#1c1c1f", 
-		"background":"#e3edf7" 
+		"background":"#d0c5d9", 
+		"shadow":"5px 5px 10px #b7adbf, -5px -5px 10px #e9ddf3"
 	},
 	{
 		"id":"4",
@@ -45,8 +49,9 @@
 		"state2":"none",
 		"state3":"none", 
 		"state4":"block", 
-		"color1":"#0096FF", 
-		"color":"#1c1c1f", 
-		"background":"#e3edf7"
+		"color1":"#fc941c", 
+		"color":"#e3edf7", 
+		"background":"#1c1c1f", 
+		"shadow":"11px 11px 22px #17171a,-11px -11px 22px #212124"
 	}
 ]
